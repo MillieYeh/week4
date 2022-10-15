@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>welcome</title>
+        <link rel = "stylesheet" type = "text/css" href = "{{ url_for('static',filename='style.css') }}" /> 
+        
+    </head>
+    <body>
+        <header class="container">
+            <div>歡迎光臨，請輸入帳號密碼</div>
+        </header>
+    </br>
+        <main class ="inside">
+            <div>登入系統</div>
+            <form action="/signin " method="POST">
+                <span>帳號 </span><input type="text" name="account" /></br>
+                <span>密碼 </span><input type="text" name="password" /></br>
+                <button>登入</button>
+            </form>
+        </main>
+        
+    </body>
+</html>
